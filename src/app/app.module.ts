@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Routes,RouterModule } from '@angular/router';
 import { ListofartisanComponent } from './listofartisan/listofartisan.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   { path: '', component:AppComponent},
@@ -18,7 +19,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     NavbarComponent,
-    ListofartisanComponent
+    ListofartisanComponent,
+    FooterComponent
     
   ],
   imports: [
