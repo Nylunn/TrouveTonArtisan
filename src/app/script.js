@@ -1,16 +1,9 @@
-var swiper = new Swiper(".mySwiper", {
+new Swiper('.swiper', {
   slidesPerView: 3,
-  spaceBetween: 30,
-  slidesPerGroup: 3,
-  loop: true,
-  grabCursor: true,
-  loopFillGroupWithBlank: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+  grid: {
+    rows: 3,
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  mousewheel: {
+    forceToAxis: true,
   },
 });

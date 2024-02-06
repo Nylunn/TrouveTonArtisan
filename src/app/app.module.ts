@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { Error404Component } from './error404/error404.component';
 import { SwiperModule } from 'swiper/types/shared';
 import Swiper from 'swiper';
+import { register } from 'swiper/element/bundle';
 
 
 const appRoutes: Routes = [
@@ -22,8 +23,11 @@ const appRoutes: Routes = [
   { path: 'alimentation', component:AlimentationComponent },
   { path: 'fabrication', component:FabricationComponent },
   { path: 'services', component:ServicesComponent },
+  { path: 'Home', component:AppComponent},
   { path: '**', component:Error404Component },
 ];
+
+register();
 
 
 @NgModule({
