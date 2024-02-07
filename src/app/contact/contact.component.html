@@ -1,0 +1,23 @@
+<div class="contact-form-container">
+  <label for="work">Choisissez un métier:</label>
+
+  <select name="work" id="work-select">
+    <option value="">--Merci de sélectionner un métier--</option>
+    <option value="electrician">Electricien</option>
+    <option value="brasseur">Brasseur</option>
+    <option value="boulanger">Boulanger</option>
+    <option value="couvreur">Couvreur</option>
+    <option value="plombier">Plombier</option>
+    <option value="poterie">Poterie</option>
+  </select> <br>
+
+    <form action="/submit-cat-photo" method="post">
+      <label for="name">Prénom:</label><br>
+      <input type="text" id="name" name="name" required><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" required></textarea><br>
+      <input type="submit" value="Envoyer" >
+    </form>
+  </div>

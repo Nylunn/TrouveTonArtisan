@@ -18,6 +18,8 @@ Pour contacter un artisan, cliquer sur sa photo puis, remplisser le formulaire d
   <div class="swiper swiper-container" slides-per-view="1">
     <div class="swiper-wrapper content">
 
+      <!--Début des cartes-->
+
       <div class="swiper-slide card">
         <div class="card-content">
             <div class="img">
@@ -41,14 +43,15 @@ Pour contacter un artisan, cliquer sur sa photo puis, remplisser le formulaire d
               <i class="fa-solid fa-star"></i>
             </div>
             <div class="button">
-              <button class="aboutMe">A propos</button>
-              <button class="ContactMe">Contactez-moi</button>
+              <button class="aboutMe" routerLink="/about/electricien">A propos</button>
+              <button class="ContactMe" routerLink="/contact">Contactez-moi</button>
             </div>
         </div>
       </div>
 
 
 
+      <!--Deuxième  cartes-->
       <div class="swiper-slide card">
         <div class="card-content">
             <div class="img">
@@ -72,8 +75,8 @@ Pour contacter un artisan, cliquer sur sa photo puis, remplisser le formulaire d
               <i class="fa-solid fa-star"></i>
             </div>
             <div class="button">
-              <button class="aboutMe">A propos</button>
-              <button class="ContactMe">Contactez-moi</button>
+              <button class="aboutMe" routerLink="/about/brasseur">A propos</button>
+              <button class="ContactMe" routerLink="/contact">Contactez-moi</button>
             </div>
         </div>
       </div>
@@ -81,6 +84,7 @@ Pour contacter un artisan, cliquer sur sa photo puis, remplisser le formulaire d
       
 
 
+      <!--Troisième cartes-->
 
       <div class="swiper-slide card">
         <div class="card-content">
@@ -105,129 +109,27 @@ Pour contacter un artisan, cliquer sur sa photo puis, remplisser le formulaire d
               <i class="fa-solid fa-star"></i>
             </div>
             <div class="button">
-              <button class="aboutMe">A propos</button>
-              <button class="ContactMe">Contactez-moi</button>
+              <button class="aboutMe" routerLink="/about/plombier">A propos</button>
+              <button class="ContactMe" routerLink="contact">Contactez-moi</button>
             </div>
         </div>
       </div>
-
-      <div class="swiper-slide card">
-        <div class="card-content">
-            <div class="img">
-              <img src="../assets/images/plombier.PNG" alt="">
-            </div>
-            <div class="social-media">
-              <i class="fa-solid fa-user"></i>
-              <i class="fa-solid fa-mobile"></i>
-            </div>
-
-            <div class="name-profession">
-              <span class="name">Jason Whoups</span> 
-              <span class="jobs">Plombier <br> 3ème ce mois-ci</span>
-            </div>
-
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <div class="button">
-              <button class="aboutMe">A propos</button>
-              <button class="ContactMe">Contactez-moi</button>
-            </div>
-        </div>
-      </div>
-
-      <div class="swiper-slide card">
-        <div class="card-content">
-            <div class="img">
-              <img src="../assets/images/plombier.PNG" alt="">
-            </div>
-            <div class="social-media">
-              <i class="fa-solid fa-user"></i>
-              <i class="fa-solid fa-mobile"></i>
-            </div>
-
-            <div class="name-profession">
-              <span class="name">Jason Whoups</span> 
-              <span class="jobs">Plombier <br> 3ème ce mois-ci</span>
-            </div>
-
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <div class="button">
-              <button class="aboutMe">A propos</button>
-              <button class="ContactMe">Contactez-moi</button>
-            </div>
-        </div>
-      </div>
-
-      <div class="swiper-slide card">
-        <div class="card-content">
-            <div class="img">
-              <img src="../assets/images/plombier.PNG" alt="">
-            </div>
-            <div class="social-media">
-              <i class="fa-solid fa-user"></i>
-              <i class="fa-solid fa-mobile"></i>
-            </div>
-
-            <div class="name-profession">
-              <span class="name">Jason Whoups</span> 
-              <span class="jobs">Plombier <br> 3ème ce mois-ci</span>
-            </div>
-
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <div class="button">
-              <button class="aboutMe">A propos</button>
-              <button class="ContactMe">Contactez-moi</button>
-            </div>
-        </div>
-      </div>
-
-
 
     </div>
   </div>
 
 
   
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-pagination"></div>
-</section> 
+
+</section>                                          
 
 
 
 
 
 
-
-<script>
-  const swiperEl = document.querySelector('swiper-container');
-  const buttonEl = document.querySelector('button');
-
-  buttonEl.addEventListener('click', () => {
-    swiperEl.swiper.slideNext();
-  });
-</script>
 
 </main>  <br>
-<!--Ajout footer-->
-<app-footer></app-footer>
 
 <!--SASS/FONTS/JS-->
 <link rel="Javascript" href="script.js">
